@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fargments.HomeFragment"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/btnDrawer"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_35sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_btn_drawer"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        app:layout_constraintGuide_percent="0.12"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideLine"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.08"
+        android:orientation="vertical"
+        />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:lineSpacingMultiplier="0.6"
+        android:fontFamily="@font/sairacondensed_extrabold"
+        android:text="SICHER DIR DEIN O€ INTERNET.*"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/_40sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/verticalGuideLine"
+        app:layout_constraintTop_toBottomOf="@id/horizontalGuideLine" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:lineSpacingMultiplier="0.6"
+        android:fontFamily="@font/sairacondensed_semibold"
+        android:text="Das bedeutet, wir sammeln Daten und Sie, damit eine Region"
+        android:textColor="@color/textsecondarycolor"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/verticalGuideLine"
+        app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvGrid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/verticalGuideLine"
+        app:layout_constraintEnd_toEndOf="@+id/tv1"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+    <CheckBox
+        android:id="@+id/chkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvGrid"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_18sdp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ja. Das versprechen wir dir! GIGA FIBER Internet bleibt bei 0€. Dauerhaft. Kosten"
+        app:layout_constraintStart_toEndOf="@id/chkBox1"
+        app:layout_constraintTop_toTopOf="@id/chkBox1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/textsecondarycolor"
+        android:fontFamily="@font/sairacondensed_medium"
+        android:layout_marginTop="@dimen/_6sdp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

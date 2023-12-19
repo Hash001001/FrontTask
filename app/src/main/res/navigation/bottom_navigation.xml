@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/bottomNavigationHomeFragmnet">
+
+    <fragment
+        android:id="@+id/bottomNavigationHomeFragmnet"
+        android:name="com.example.metafrontsample.ui.bottom_navigations.BottomNavigationHomeFragmnet"
+        android:label="fragment_bottom_navigation_home_fragmnet"
+        tools:layout="@layout/fragment_bottom_navigation_home_fragmnet" />
+    <fragment
+        android:id="@+id/bottomNaviagtionFaqFragment"
+        android:name="com.example.metafrontsample.ui.bottom_navigations.BottomNaviagtionFaqFragment"
+        android:label="fragment_bottom_naviagtion_faq"
+        tools:layout="@layout/fragment_bottom_naviagtion_faq" />
+</navigation>

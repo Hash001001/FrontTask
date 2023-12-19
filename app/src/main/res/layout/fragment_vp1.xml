@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fargments.viewPagerFragments.VpFragment1">
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Das Angebot klingt total verrückt. Wo ist hier der Haken?"
+        android:textAllCaps="true"
+        android:fontFamily="@font/sairacondensed_extrabold"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="#4D4D4D"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:lineSpacingMultiplier="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bei GIGAFIBER gibt es keinen Haken. Keine versteckten Kosten. Das Angebot gilt genauso, wie es hier kommuniziert wird."
+        android:textAllCaps="true"
+        android:fontFamily="@font/sairacondensed_regular"
+        android:textSize="@dimen/_16sdp"
+
+        android:lineSpacingMultiplier="0.8"
+        android:textColor="#4D4D4D"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
